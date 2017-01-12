@@ -1,7 +1,7 @@
-FROM debian:jessie
+FROM alpine:latest
 MAINTAINER Matt Bentley <mbentley@mbentley.net>
 
-RUN (apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y ldap-utils)
+RUN apk --no-cache add openldap-clients
 
 USER nobody
 CMD echo "available commands:"; ls /usr/bin | grep ldap

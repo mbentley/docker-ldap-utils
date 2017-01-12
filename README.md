@@ -1,7 +1,7 @@
 mbentley/ldap-utils
 ===================
 
-docker image for ldap-utils
+docker image for ldap-utils (openldap-clients)
 
 To pull this image:
 `docker pull mbentley/ldap-utils`
